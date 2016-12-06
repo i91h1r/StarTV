@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group >
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@mipmap/home"
+            android:title="@string/menu_home"/>
+        <item
+            android:id="@+id/nav_navigation"
+            android:icon="@mipmap/main_tab_two_btn_n"
+            android:title="@string/menu_navigation"/>
+        <item
+            android:id="@+id/nav_v"
+            android:icon="@mipmap/main_tab_three_btn_n"
+            android:title="@string/menu_v"/>
+        <item
+            android:id="@+id/nav_sub"
+            android:icon="@mipmap/main_tab_four_btn_n"
+            android:title="@string/menu_sub"/>
+
+        <item
+            android:id="@+id/nav_my"
+            android:icon="@mipmap/main_tab_five_btn_n"
+            android:title="@string/menu_my"/>
+        <item
+            android:id="@+id/download"
+            android:icon="@mipmap/downloading48"
+            android:title="下载管理"></item>
+    </group>
+</menu>

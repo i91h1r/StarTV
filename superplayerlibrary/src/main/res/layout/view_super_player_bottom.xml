@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_video_bottom_box"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true"
+    android:background="#88000000">
+
+    <LinearLayout
+        android:id="@+id/view_jky_player_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/app_video_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/video_play_selector"/>
+
+        <TextView
+            android:id="@+id/view_jky_player_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_live_number"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_video_currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/view_jky_player_left"
+        android:text="06:21"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <SeekBar
+        style="@style/SeekBarAppTheme"
+        android:id="@+id/app_video_seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/app_video_currentTime"/>
+
+    <TextView
+        android:id="@+id/app_video_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/app_video_seekBar"
+        android:layout_centerVertical="true"
+        android:text="10:10"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_danmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/app_video_endTime"
+        android:layout_centerVertical="true"
+        android:background="@drawable/danmu_switch_on_portrait"/>
+
+    <ImageView
+        android:id="@+id/view_jky_player_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/video_control_expend_selector"/>
+
+</LinearLayout>

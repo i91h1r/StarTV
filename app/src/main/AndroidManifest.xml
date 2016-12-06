@@ -2,19 +2,62 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hyr.startv">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ui.home.activity.WelecomeActivity"
+            android:theme="@style/AppTheme.Luncher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.home.activity.HomeActivity"></activity>
+        <activity android:name=".ui.search.activity.SearchResultActivity"></activity>
+        <activity android:name=".ui.video.VideoPlayActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity android:name=".ui.artist.ArtistInfoActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".ui.download.DownloadActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".ui.download.FullVideoPlayActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+           android:screenOrientation="landscape"
+            ></activity>
+
+        <activity android:name=".ui.home.activity.MoreMvActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity android:name=".ui.home.activity.WebViewActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>
